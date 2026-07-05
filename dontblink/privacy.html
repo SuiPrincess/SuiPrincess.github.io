@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DON'T BLINK プライバシーポリシー。広告なし・トラッキングなし。収集するデータとその目的について。">
+  <title>DON'T BLINK プライバシーポリシー</title>
+  <style>
+    :root {
+      --bg: #06030d;
+      --card: #0d0819;
+      --text: #e8e6f0;
+      --muted: #8a86a0;
+      --cyan: #37e0ff;
+      --pink: #ff4d9e;
+      --border: #221b38;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+    header { padding-bottom: 24px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+    .back-link {
+      display: inline-block; color: var(--muted); text-decoration: none;
+      font-size: 0.9rem; margin-bottom: 24px;
+    }
+    .back-link:hover { color: var(--cyan); }
+    h1 { font-size: 1.8rem; margin: 0 0 12px; letter-spacing: 0.02em; }
+    h1 .brand {
+      background: linear-gradient(90deg, var(--cyan), var(--pink));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+    h2 {
+      font-size: 1.15rem; margin: 40px 0 12px; padding-left: 12px;
+      border-left: 4px solid var(--cyan);
+    }
+    p, li { font-size: 0.95rem; }
+    a { color: var(--cyan); }
+    .highlight {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 18px 20px; margin: 24px 0;
+    }
+    .highlight strong { color: var(--cyan); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 16px 0; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+    .en { color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 56px; padding-top: 24px; }
+    footer { margin-top: 64px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); padding-top: 24px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="back-link" href="./index.html">← DON'T BLINK サポート</a>
+      <h1><span class="brand">DON'T BLINK</span> プライバシーポリシー</h1>
+      <p class="meta">制定日: 2026年7月5日 / 開発者: SuiPrincess（個人開発）</p>
+    </header>
+
+    <div class="highlight">
+      <p style="margin:0">
+        DON'T BLINK は<strong>広告なし・トラッキングなし・アカウント登録なし</strong>のゲームです。
+        ユーザーを広告目的で追跡することはなく、IDFA（広告識別子）を取得せず、
+        App Tracking Transparency のダイアログも表示されません。
+        収集するのは、アプリの品質改善のための<strong>匿名のプレイ統計と障害診断データのみ</strong>です。
+      </p>
+    </div>
+
+    <h2>1. 収集する情報</h2>
+    <p>本アプリは、品質改善と不具合修正のため、Google Firebase を利用して以下の情報を収集します。
+    いずれも<strong>氏名・メールアドレス等の個人情報とは紐付けられません</strong>。</p>
+    <table>
+      <tr><th>種類</th><th>内容</th><th>目的</th></tr>
+      <tr>
+        <td>プレイ統計</td>
+        <td>ラン開始/終了、スコア・レベル等のプレイ結果、画面表示、機能の利用状況</td>
+        <td>ゲームバランスと機能の改善</td>
+      </tr>
+      <tr>
+        <td>障害診断データ</td>
+        <td>クラッシュログ、パフォーマンス情報、発生時のプレイ状況（モード・レベル）</td>
+        <td>不具合の特定と修正</td>
+      </tr>
+      <tr>
+        <td>デバイス識別子</td>
+        <td>Firebase が発行するアプリ単位の識別子・ベンダー識別子（IDFV）。広告識別子（IDFA）は取得しません</td>
+        <td>統計の集計（重複排除）</td>
+      </tr>
+    </table>
+
+    <h2>2. 収集しない情報</h2>
+    <ul>
+      <li>氏名、メールアドレス、電話番号などの個人情報（アカウント登録自体がありません）</li>
+      <li>位置情報、連絡先、写真、健康情報</li>
+      <li>広告識別子（IDFA）。広告 SDK は一切組み込んでいません</li>
+    </ul>
+
+    <h2>3. 第三者サービス</h2>
+    <ul>
+      <li><strong>Google Firebase（Analytics / Crashlytics）</strong> — 上記データの収集・集計に利用します。
+        詳細は <a href="https://firebase.google.com/support/privacy?hl=ja" target="_blank" rel="noopener">Firebase のプライバシーとセキュリティ</a> をご覧ください。</li>
+      <li><strong>Apple Game Center</strong> — ランキング機能はお使いの Apple アカウントの Game Center を通じて提供され、
+        Apple のプライバシーポリシーが適用されます。当方が Game Center のアカウント情報を取得・保存することはありません。</li>
+    </ul>
+
+    <h2>4. 端末内に保存されるデータ</h2>
+    <p>スコア、獲得オーブ、設定などのセーブデータは<strong>お使いの端末内にのみ</strong>保存され、
+    当方のサーバーに送信されることはありません。アプリを削除するとセーブデータも削除されます。
+    リマインダー通知はすべて端末内で完結するローカル通知で、プッシュ通知サーバーは使用していません。</p>
+
+    <h2>5. アプリ内課金</h2>
+    <p>アプリ内課金（見た目のカスタマイズ等）を提供する場合、決済はすべて Apple が処理し、
+    当方がクレジットカード情報等の決済情報を取得することはありません。</p>
+
+    <h2>6. データの保持と削除</h2>
+    <p>収集した統計・診断データは、Firebase の標準的な保持期間に従って保管された後、自動的に削除されます。
+    データ削除のご要望は下記の連絡先までお知らせください（識別子単位での削除依頼に対応します）。</p>
+
+    <h2>7. お子様のプライバシー</h2>
+    <p>本アプリは個人を特定する情報を収集せず、広告も表示しません。
+    13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+
+    <h2>8. ポリシーの変更</h2>
+    <p>本ポリシーを変更する場合は、本ページで告知します。重要な変更がある場合はアプリ内でもお知らせします。</p>
+
+    <h2>9. お問い合わせ</h2>
+    <p>プライバシーに関するご質問・ご要望は <a href="mailto:rkdkoganei@gmail.com">rkdkoganei@gmail.com</a> までご連絡ください。</p>
+
+    <div class="en">
+      <p><strong>English summary:</strong> DON'T BLINK contains no ads and does not track you.
+      We do not collect your name, email, location, or advertising identifier (IDFA), and the app never shows an App Tracking Transparency prompt.
+      To improve the game and fix crashes, we collect anonymous gameplay statistics and crash/performance diagnostics via Google Firebase (Analytics / Crashlytics),
+      keyed by app-scoped device identifiers that are not linked to your identity and not used for tracking.
+      Leaderboards are provided through Apple Game Center under Apple's privacy policy.
+      Save data stays on your device. For privacy inquiries or data deletion requests, contact
+      <a href="mailto:rkdkoganei@gmail.com">rkdkoganei@gmail.com</a>.</p>
+    </div>
+
+    <footer>© 2026 SuiPrincess — DON'T BLINK</footer>
+  </div>
+</body>
+</html>
